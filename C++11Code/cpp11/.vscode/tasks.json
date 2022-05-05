@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "E:\\MinGW64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				//"${workspaceFolder}\\LOG\\*.cpp",
+				"-o",
+				"${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
+				//"${workspaceFolder}\\LOG\\bin\\log.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: E:\\MinGW64\\bin\\g++.exe"
+		}
+	]
+}

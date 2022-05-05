@@ -1,0 +1,19 @@
+/*
+ * @Description: 
+ * @Author: liuxiao
+ * @Date: 2022-04-13 16:52:39
+ */
+
+
+#include <stdio.h>
+
+#define LOG(...) {\
+    fprintf(stderr, "%s, Line %d:\t", __FILE__, __LINE__);\
+    fprintf(stderr, __VA_ARGS__);\
+    fprintf(stderr, "\n");\
+}
+
+int main() {
+    int x = 3;
+    LOG("x = 4");
+}
